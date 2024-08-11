@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Goudy Bookletter 1911", sans-serif;
 }
 
 
@@ -9,16 +10,19 @@
 body{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
+    background-color: RGB(154,115,68);
 }
 
 #border {
     display: flex;
     justify-content: center;
-    background-image:linear-gradient(360deg, rgb(7, 2, 2), rgba(32, 7, 7, 0.83));
+    align-items: center;
+    background-color:   RGB(21,21,21);
     opacity: 96%;
-    height: 99.5%;
+    height: 99%;
     width: 99.5%;
     border-radius: 11px;
 }
@@ -27,7 +31,8 @@ body{
 #main{
     width: 65%;
     height: 100%;
-    background-color: white;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -36,6 +41,9 @@ body{
     width: 40%;
     float: left;
     height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(242, 181, 68);
 
     #image{
         width: 100%;
@@ -50,34 +58,94 @@ body{
     width: 60%;
     height: 100%;
     float: right;
+    align-items: center;
 }
+
 
 .sections{
     display: flex;
     height: 33.333%;
-    /*border: blue 1px dashed;*/
-    width: 100%;
+    justify-content: center;
+    margin-left: 1px;
+    background-image: linear-gradient(90deg,  RGB(21,21,21), RGB(154,115,68));
 }
 
 #header{
     display: flex;
     align-items: flex-end;
-    background-image:linear-gradient(360deg, rgb(7, 2, 2), rgba(32, 7, 7, 0.83));
+    background-color: rgba(0, 0, 0, 0.76);
     height: 35%;
 
 }
 
+#bottom{
+    display: flex;
+    background-image: linear-gradient(90deg,  RGB(21,21,21), RGB(154,115,68))
+}
+
+#form_columns{
+    display: flex;
+    flex-flow: column;
+    background-image: linear-gradient(270deg, RGB(154,115,68),  RGB(21,21,21) );
+    border-bottom-right-radius: 30px;
+    height: 35%;
+}
+
 .form{
     display: flex;
-    flex-direction: column;
-    padding: 25px;
-    
+    flex-flow: wrap;
+    margin-left: 15px;
+
 }
+
+.form_rows{
+    display: flex;
+    flex-direction: column;
+    padding: 9px;
+    padding-right: 25px;
+}
+
+label{
+    font-size: 14px;
+    color: rgb(254, 192, 22);
+    /*-webkit-text-stroke-width: .02em;
+    -webkit-text-stroke-color: white;*/
+}
+
+input{
+    border: rgb(254, 192, 22) 1px solid;
+    height:1.8em;
+    margin-top: 1px;
+    background-color: RGB(21,21,21);
+    color: white;
+}
+
+
+
+
+
+h2{
+    padding: 3px;
+    font-size: 1.1em;
+    font-weight: lighter;
+    margin-left: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: rgb(254, 192, 22);
+    /*-webkit-text-stroke-width: .02em;
+    -webkit-text-stroke-color: white;*/
+
+}
+
 
 h1{
     font-size: 1rem;
     font-family:'Times New Roman', Times, serif;
     padding: 25px;
     font-weight: 900;
-    color: white;
+    color: rgb(254, 192, 22);
+    /*-webkit-text-stroke-width: .02em;
+    -webkit-text-stroke-color: white; */
+
+    margin-bottom: 15px;
 }
