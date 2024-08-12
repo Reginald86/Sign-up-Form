@@ -21,37 +21,40 @@
             </div>
             <div class = "sections" id = "form_columns">
                 <h2>Let's do this!</h2>
-                <form class = "form">
+                <form class = "form" action="#" method="post">
                     <div class = form_rows>
                         <label for ="First_Name">First Name</label>
-                        <input type = "text" id="First_Name" name="First_Name">
+                        <input type = "text" id="First_Name" name="First_Name" required>
                     </div>
                     <div class = form_rows>
                         <label for="Last_Name">Last Name</label>
-                        <input type = "text" id="Last_Name" name="Last_Name">
+                        <input type = "text" id="Last_Name" name="Last_Name" required>
                     </div>
                     <div class = form_rows>
                         <label for ="Email">Email</label>
-                        <input type = "text" id="Email" name="Email">
+                        <input type = "email" id="Email" name="Email" placeholder="TOP@example.com" required>
                     </div>
                     <div class = form_rows>
                         <label for ="Phone">Phone Number</label>
-                        <input type = "text" id="Phone" name="Phone">
+                        <input type = "text" minlength="10" maxlength="10" pattern="\d{10}" title="Phone number must be 10 digits long" id="Phone" name="Phone">
                     </div>
-                    <div class = form_rows>
-                        <label for ="Password">Password</label>
-                        <input type = "Password" id="Password" name="Password">
-                    </div>
-                    <div class = form_rows>
-                        <label for ="Password">Password</label>
-                        <input type = "Password" id="Password" name="Password">
+                    <div class="form_rows">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
                     </div>
                     
-                </form>
+                    <div class="form_rows">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" required oninput="checkPasswordMatch()">
+                    </div>
+                    
+        
 
             </div>
             <div class = "sections" id="bottom">
-
+                <button type="submit" id="submit">Submit</button>
+            </form>
+                <h3>Already have an account? <strong>Log in</strong></h3>
             </div>
         </div>
 
